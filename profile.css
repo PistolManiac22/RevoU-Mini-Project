@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+.header-wrapper {
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+}
+
+.logo {
+    width: 50px;
+    max-width: 50px;
+    min-width: 50px;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav button:not(:last-child) {
+    border-right: none;
+}
+
+.nav button {
+    background-color: rgb(255, 255, 255);
+    border: 1.5px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    padding: 7px 35px;
+    cursor: pointer;
+    float: left;
+}
+
+.nav button:first-child {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.nav button:last-child {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.nav button:hover {
+    background-color: #d8d8d8;
+}
+
+@media only screen and (max-width: 715px) {
+    .header-wrapper {
+        flex-direction: column;
+    }
+    
+    .nav {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .nav button {
+        width: 100%;
+        margin: 5px;
+        padding: 7px 0;
+        border: 1.5px solid black;
+        border-radius: 4px;
+    }
+    
+    .nav button:not(:last-child) {
+        border-right: 1.5px solid black;
+    }
+}
+.all{
+    background: url(books.jpg);
+}
+
+#about-us,
+#vision-and-mission {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px 0;
+    background-color: rgb(0, 0, 0, 0.8);
+    color: aliceblue;
+    background-size: cover;
+    padding: 40px 20px;
+}
+
+#about-us h2,
+#vision-and-mission h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#about-us p,
+#vision-and-mission p {
+    text-align: justify;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+#vision-and-mission h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+footer{
+    text-align: right;
+}
